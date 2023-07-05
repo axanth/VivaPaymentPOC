@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="VivaPaymentPOC.MainPage" 
+             x:Name="page">
+
+    <StackLayout>
+        <Button Text="Open Viva POS" WidthRequest="200" HeightRequest="100" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Clicked="Button_Clicked"></Button>
+        <Label Text="{Binding Source={RelativeSource AncestorType={x:Type ContentPage}, AncestorLevel=1}, Path=CallBackData}" FontSize="Medium" TextColor="White"></Label>
+    </StackLayout>
+</ContentPage>
